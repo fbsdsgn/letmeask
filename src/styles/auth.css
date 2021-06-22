@@ -43,6 +43,11 @@
 #page-auth .main-content > img {
   align-self: center;
 }
+#page-auth .main-content h2 {
+  font-size: 24px;
+  margin: 64px 0 24px;
+  font-family: "Poppins", sans-serif;
+}
 #page-auth .main-content form input {
   height: 50px;
   border-radius: 8px;
@@ -55,6 +60,14 @@
 }
 #page-auth .main-content form button, #page-auth .main-content form input {
   width: 100%;
+}
+#page-auth .main-content p {
+  font-size: 14px;
+  color: #737380;
+  margin-top: 16px;
+}
+#page-auth .main-content a {
+  color: #e559f9;
 }
 #page-auth .create-room {
   margin-top: 64px;
