@@ -5,9 +5,16 @@ import logoImg from "../assets/images/logo.svg";
 
 import "../styles/auth.scss";
 
-import {Button} from '../components/Button'
+import { Button } from "../components/Button";
+
+import {useContext} from "react";
+import { AuthContext } from "../App";
 
 export function NewRoom() {
+
+  const { user } = useContext(AuthContext)
+
+
   return (
     <div id="page-auth">
       <aside>
@@ -28,7 +35,9 @@ export function NewRoom() {
             <input type="text" placeholder="Nome da sala" />
             <Button type="submit">Criar sala</Button>
           </form>
-          <p>Quer entrar em uma sala existente? <Link to="/">clique aqui</Link></p>
+          <p>
+            Quer entrar em uma sala existente? <Link to="/">clique aqui</Link>
+          </p>
         </div>
       </main>
     </div>
